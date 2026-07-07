@@ -3,63 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Book</title>
+    <title>Portfolio Book - Md. Monjurul Haque</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <div class="book-container">
-        <div class="book-page" id="page-1">
+        
+        <!-- Page 1 (Cover & Experience) -->
+        <div class="book-page" id="page-1" style="z-index: 3;">
+            <!-- Front of Page 1 -->
             <div class="page-face front">
                 <div class="profile-section">
                     <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
                     <h2>Md. Monjurul Haque</h2>
-                    <p class="title">Web Developer & Educator</p>
+                    <p class="title">Web Developer, Graphic Designer & Educator</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <p class="bio">Hi, I'm a Web Developer and Educator from Kishoreganj. I love simplifying complex topics for my students.</p>
+                    <p class="bio">I am a professional Web Developer, Graphic Designer, and Lecturer of Economics at Jiauddin School and College in Kishoreganj. I specialize in building modern PWAs, integrating AI tools, and empowering students with ICT skills.</p>
                     <div class="buttons">
                         <button class="btn">Download CV</button>
                     </div>
                 </div>
+                <!-- Next Button -->
                 <button class="nav-btn next-btn" onclick="turnPage(1)"><i class="fas fa-chevron-right"></i></button>
             </div>
             
+            <!-- Back of Page 1 (Work Experience) -->
             <div class="page-face back">
                 <h3 class="section-title">Work Experience</h3>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h4>Educator - Ziauddin School & College</h4>
-                        <p class="date">Present</p>
-                        <p>Teaching Economics and providing guidance on ICT, AI, and online skill development.</p>
+                        <h4>Lecturer of Economics</h4>
+                        <p class="date">Jiauddin School & College | Present</p>
+                        <p>Teaching Economics while guiding students on ICT, AI integration, and building successful online careers.</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Web Developer</h4>
-                        <p class="date">2020 - Present</p>
-                        <p>Building diverse websites utilizing modern AI tools and web technologies.</p>
+                        <h4>Web Developer & Graphic Designer</h4>
+                        <p class="date">Freelance | Present</p>
+                        <p>Designing modern web apps, fixing complex deployment issues (Vercel, Tailwind), and creating visual assets using Canva.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>SEF-Assistant Relationship Officer</h4>
+                        <p class="date">Bank Asia Limited (Former)</p>
+                        <p>Managed banking operations and client relationships within the CMSE Department.</p>
                     </div>
                 </div>
+                <!-- Prev Button -->
                 <button class="nav-btn prev-btn" onclick="turnPageBack(1)"><i class="fas fa-chevron-left"></i></button>
             </div>
         </div>
 
-        <div class="book-page" id="page-2" style="z-index: -1;">
+        <!-- Page 2 (Skills & Major Projects) -->
+        <div class="book-page" id="page-2" style="z-index: 2;">
+            <!-- Front of Page 2 (Skills) -->
             <div class="page-face front">
-                <h3 class="section-title">My Skills</h3>
+                <h3 class="section-title">Tech & AI Skills</h3>
                 <div class="skills-grid">
-                    <div class="skill-box">HTML5</div>
-                    <div class="skill-box">CSS3</div>
-                    <div class="skill-box">JavaScript</div>
-                    <div class="skill-box">React</div>
-                    <div class="skill-box">AI Tools</div>
+                    <div class="skill-box">React & JavaScript</div>
+                    <div class="skill-box">Tailwind CSS</div>
+                    <div class="skill-box">Firebase & Vercel</div>
+                    <div class="skill-box">Flutter / PWAs</div>
+                    <div class="skill-box">Git & GitHub</div>
+                    <div class="skill-box">Gemini 3.1 & Claude AI</div>
+                    <div class="skill-box">Canva UI/UX</div>
+                    <div class="skill-box">Video & Motion AI</div>
                 </div>
                 <button class="nav-btn next-btn" onclick="turnPage(2)"><i class="fas fa-chevron-right"></i></button>
             </div>
 
+            <!-- Back of Page 2 (Projects) -->
+            <div class="page-face back">
+                <h3 class="section-title">Brands & Projects</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>MH Academy & AI School</h4>
+                        <p>Founded and developed landing pages, logos, and course structures to educate students on modern web and AI tech.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Kobitar Khata</h4>
+                        <p>A digital literature repository and Bengali poetry app built with Firebase Cloud Firestore.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>MH Finance</h4>
+                        <p>A banking-themed web portal featuring an admin panel and mobile-optimized cards.</p>
+                    </div>
+                </div>
+                <button class="nav-btn prev-btn" onclick="turnPageBack(2)"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+
+        <!-- Page 3 (Publications & Contact) -->
+        <div class="book-page" id="page-3" style="z-index: 1;">
+            <!-- Front of Page 3 (Publications & Certifications) -->
+            <div class="page-face front">
+                <h3 class="section-title">Publications & Achievements</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>n8n দিয়ে অটোমেশন: জিরো থেকে প্রো</h4>
+                        <p class="date">E-book | June 2026</p>
+                        <p>Authored a guide focused on business automation using n8n and AI content agents.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Idea Hacker</h4>
+                        <p class="date">E-book | January 2026</p>
+                        <p>Authored and launched a digital e-book focusing on creative ideation and tech strategies.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>UNICEF Micro Skills Certificate</h4>
+                        <p class="date">April 2026</p>
+                        <p>Completed course on Green Skills, Cyber Safety, and Career Readiness.</p>
+                    </div>
+                </div>
+                <button class="nav-btn next-btn" onclick="turnPage(3)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <!-- Back of Page 3 (Contact) -->
             <div class="page-face back">
                 <h3 class="section-title">Contact Me</h3>
                 <form class="contact-form">
@@ -68,9 +132,10 @@
                     <textarea placeholder="Your Message" rows="4"></textarea>
                     <button type="button" class="btn">Send Message</button>
                 </form>
-                <button class="nav-btn prev-btn" onclick="turnPageBack(2)"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn prev-btn" onclick="turnPageBack(3)"><i class="fas fa-chevron-left"></i></button>
             </div>
         </div>
+
     </div>
 
     <script src="script.js"></script>
